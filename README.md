@@ -22,9 +22,9 @@
 | 类名             | 功能                                                       | 调用关系                                         |
 | ---------------- | ---------------------------------------------------------- | ------------------------------------------------ |
 | PlayerData       | 管理玩家的分数、段位和金币                                 | 被PlayerController类调用                         |
-| RewardPrefab     | 保存奖励预制体的各子物体                                   | 被RewardController类调用                         |
+| RewardPrefab     | 保存奖励预制体的各子物体,修改奖励列表显示的信息             | 被RewardController类调用                         |
 | PlayerController | 加分、查看、刷新按钮的操作                                 | 被RewardController类调用，调用RewardController类 |
-| RewardController | 生成奖励列表，修改奖励状态，开放奖励和点击按钮领取奖励操作 | 被PlayerController类调用，调用PlayerController类 |
+| RewardController | 生成奖励列表和点击按钮领取奖励操作 | 被PlayerController类调用，调用PlayerController类 |
 
 
 ### 4.流程图
